@@ -1,0 +1,2 @@
+class Twont < ApplicationRecord
+end

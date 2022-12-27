@@ -1,0 +1,2874 @@
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:06:45 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 35.8ms | Allocations: 630)
+Completed 200 OK in 144ms (Views: 63.9ms | ActiveRecord: 0.0ms | Allocations: 5169)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:11:30 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 284)
+Completed 200 OK in 12ms (Views: 7.3ms | Allocations: 966)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-12-27 14:11:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/home/index" for 127.0.0.1 at 2022-12-27 14:11:46 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 748.3ms | Allocations: 99274)
+Completed 200 OK in 762ms (Views: 757.6ms | Allocations: 100227)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2022-12-27 14:12:08 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3035)
+Completed 200 OK in 19ms (Views: 14.4ms | Allocations: 3849)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:12:25 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:13:02 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 14800)
+Completed 200 OK in 30ms (Views: 27.9ms | Allocations: 15423)
+
+
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTwonts (20221227191602)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "twonts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "twont" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221227191602"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-27 19:17:45.778116"], ["updated_at", "2022-12-27 19:17:45.778116"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:18:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant TwontController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  TwontsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:18:56 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 5780)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5863)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.5ms | Allocations: 7666)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_twont_path' for #<ActionView::Base:0x000000000190a0>
+
+'.freeze;@output_buffer.append=( link_to "New twont", new_twont_path );
+                                                      ^^^^^^^^^^^^^^):
+    11:   <% end %>
+    12: </div>
+    13: 
+    14: <%= link_to "New twont", new_twont_path %>
+  
+app/views/twonts/index.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:19:55 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 5526)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5609)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms | Allocations: 6941)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_twont_path' for #<ActionView::Base:0x0000000001cc50>
+
+'.freeze;@output_buffer.append=( link_to "New twont", new_twont_path );
+                                                      ^^^^^^^^^^^^^^
+Did you mean?  twonts_new_path):
+    11:   <% end %>
+    12: </div>
+    13: 
+    14: <%= link_to "New twont", new_twont_path %>
+  
+app/views/twonts/index.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:20:49 -0500
+  
+SyntaxError (C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  resources: twonts
+           ^
+C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:21:21 -0500
+  
+SyntaxError (C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  resources: twonts
+           ^
+C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:24:18 -0500
+  
+SyntaxError (C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  resources: twonts
+           ^
+C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:24:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:25:04 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 15054)
+Completed 200 OK in 38ms (Views: 34.3ms | Allocations: 15801)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:27:34 -0500
+  
+ArgumentError ('Twonts' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:28:53 -0500
+  
+SyntaxError (C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  resources: twonts
+           ^
+C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:29:16 -0500
+  
+SyntaxError (C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  resources: Twont
+           ^
+C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:30:38 -0500
+  
+SyntaxError (C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  resources: Twonts
+           ^
+C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:30:47 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 14790)
+Completed 200 OK in 27ms (Views: 24.9ms | Allocations: 15410)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:38:08 -0500
+  
+SyntaxError (C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  resources: twonts
+           ^
+C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:39:04 -0500
+  
+SyntaxError (C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+  resources: twonts
+           ^
+C:/Users/Quirk/Documents/GitHub/Twonter/twonter/config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:2: syntax error, unexpected ':', expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:39:17 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 14790)
+Completed 200 OK in 30ms (Views: 28.4ms | Allocations: 15410)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 14:39:21 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3702)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.5ms | Allocations: 5060)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 14:39:24 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 89.9ms | Allocations: 4506)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 91.7ms | Allocations: 4825)
+  Rendered layout layouts/application.html.erb (Duration: 97.6ms | Allocations: 7236)
+Completed 200 OK in 107ms (Views: 99.1ms | ActiveRecord: 0.6ms | Allocations: 11228)
+
+
+Started POST "/twonts" for 127.0.0.1 at 2022-12-27 14:39:34 -0500
+Processing by TwontsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "twont"=>{"twont"=>"This is a test twont!"}, "commit"=>"Create Twont"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTwont Create (1.5ms)[0m  [1m[32mINSERT INTO "twonts" ("twont", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["twont", "This is a test twont!"], ["created_at", "2022-12-27 19:39:34.680495"], ["updated_at", "2022-12-27 19:39:34.680495"]]
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/twonts/1
+Completed 302 Found in 15ms (ActiveRecord: 4.4ms | Allocations: 3775)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 14:39:34 -0500
+Processing by TwontsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 177)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 16.2ms | Allocations: 1545)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3940)
+Completed 200 OK in 33ms (Views: 24.7ms | ActiveRecord: 0.2ms | Allocations: 6750)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 14:39:42 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 995)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3282)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 3608)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 14:39:56 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 17309)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 1.8ms | Allocations: 18672)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:40:00 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 863)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3148)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 3460)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:48:11 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1704)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 4372)
+Completed 200 OK in 27ms (Views: 21.4ms | ActiveRecord: 0.4ms | Allocations: 5218)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 14:51:12 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3003)
+Completed 200 OK in 17ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 4516)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 14:51:15 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2838)
+Completed 200 OK in 25ms (Views: 15.7ms | ActiveRecord: 0.4ms | Allocations: 3585)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 14:51:17 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 3.7ms | Allocations: 1130)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1392)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3677)
+Completed 200 OK in 21ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 4034)
+
+
+Started POST "/twonts" for 127.0.0.1 at 2022-12-27 14:51:23 -0500
+Processing by TwontsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "twont"=>{"twont"=>"Another one!"}, "commit"=>"Create Twont"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTwont Create (2.8ms)[0m  [1m[32mINSERT INTO "twonts" ("twont", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["twont", "Another one!"], ["created_at", "2022-12-27 19:51:23.414926"], ["updated_at", "2022-12-27 19:51:23.414926"]]
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/twonts/2
+Completed 302 Found in 18ms (ActiveRecord: 7.0ms | Allocations: 2438)
+
+
+Started GET "/twonts/2" for 127.0.0.1 at 2022-12-27 14:51:23 -0500
+Processing by TwontsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 624)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2914)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 3701)
+
+
+Started DELETE "/twonts/2" for 127.0.0.1 at 2022-12-27 14:51:25 -0500
+Processing by TwontsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/twonts_controller.rb:52:in `destroy'
+  [1m[36mTwont Destroy (5.5ms)[0m  [1m[31mDELETE FROM "twonts" WHERE "twonts"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/twonts_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/twonts_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/twonts
+Completed 302 Found in 23ms (ActiveRecord: 10.3ms | Allocations: 2455)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 14:51:25 -0500
+Processing by TwontsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 906)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3191)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.2ms | Allocations: 3482)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 14:51:28 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.9ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2841)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 0.9ms | Allocations: 3588)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 14:53:51 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1192)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1279)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.4ms | Allocations: 2560)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p style="color: green"><%= notice %></p>
+
+<%= render @twont %>
+
+<div>
+  <%= link_to "Edit this twont", edit_twont_path(@twont) %> |
+  <%= link_to "Back to twonts", twonts_path %>
+
+  <%= button_to "Destroy this twont" class="btn btn-danger", @twont, method: :delete %>
+</div>
+
+):
+1:    <p style="color: green"><%= notice %></p>
+2:    
+3:    <%= render @twont %>
+4:    
+5:    <div>
+6:      <%= link_to "Edit this twont", edit_twont_path(@twont) %> |
+7:      <%= link_to "Back to twonts", twonts_path %>
+8:    
+9:      <%= button_to "Destroy this twont" class="btn btn-danger", @twont, method: :delete %>
+10:    </div>
+  
+app/views/twonts/show.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/twonts/show.html.erb:9: syntax error, unexpected ',', expecting ')'
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 14:53:57 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 140)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1115)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 3767)
+Completed 200 OK in 31ms (Views: 24.3ms | ActiveRecord: 0.2ms | Allocations: 5132)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:57:00 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1507)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 4181)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.2ms | Allocations: 5036)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 14:57:03 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 723)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3000)
+Completed 200 OK in 18ms (Views: 10.3ms | ActiveRecord: 0.4ms | Allocations: 3869)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:57:38 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.8ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1522)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2741)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.8ms | Allocations: 3548)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twonter</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <%= render 'home/header'>
+  <div class="container">
+  <%= yield %>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
+):
+1:    <!doctype html>
+2:    <html lang="en">
+3:      <head>
+4:        <meta charset="utf-8">
+5:        <meta name="viewport" content="width=device-width, initial-scale=1">
+6:        <title>Twonter</title>
+7:        <meta name="viewport" content="width=device-width,initial-scale=1">
+8:        <%= csrf_meta_tags %>
+9:        <%= csp_meta_tag %>
+10:    
+11:        <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+12:        <%= javascript_importmap_tags %>
+13:    
+14:        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+15:      </head>
+16:      <body>
+17:    
+18:      <%= render 'home/header'>
+19:      <div class="container">
+20:      <%= yield %>
+21:      </div>
+22:    
+23:    
+24:      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+25:      </body>
+26:    
+27:    
+28:    </html>
+  
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:57:54 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1522)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 6066)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.2ms | Allocations: 6889)
+
+
+  
+ActionView::Template::Error (Missing partial home/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/Quirk/Documents/GitHub/Twonter/twonter/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.4/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.4/app/views"
+
+Did you mean?  layouts/header
+               action_text/attachables/remote_image
+               action_text/contents/content
+               layouts/action_text/contents/content
+               action_text/attachment_galleries/attachment_gallery
+               action_text/attachables/missing_attachable):
+    15:   </head>
+    16:   <body>
+    17: 
+    18:   <%= render 'home/header' %>
+    19:   <div class="container">
+    20:   <%= yield %>
+    21:   </div>
+  
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:58:31 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1522)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 4419)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.2ms | Allocations: 5268)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:59:28 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1531)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 4417)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.2ms | Allocations: 5272)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 14:59:59 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1525)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4455)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.2ms | Allocations: 5310)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:00:08 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 872)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3220)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 3530)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:00:28 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 1.5ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1513)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 4431)
+Completed 200 OK in 42ms (Views: 34.8ms | ActiveRecord: 0.4ms | Allocations: 5263)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:01:20 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1528)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 4446)
+Completed 200 OK in 33ms (Views: 27.7ms | ActiveRecord: 0.3ms | Allocations: 5301)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:01:32 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.5ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 1.1ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1519)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 4436)
+Completed 200 OK in 39ms (Views: 33.8ms | ActiveRecord: 0.5ms | Allocations: 5291)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:01:35 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 878)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3226)
+Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 3536)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:01:53 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 884)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3232)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.2ms | Allocations: 3519)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:01:54 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 881)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 3229)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.3ms | Allocations: 3518)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:02:26 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 140)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1519)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 4436)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.2ms | Allocations: 5268)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:02:28 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 738)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3078)
+Completed 200 OK in 20ms (Views: 13.5ms | ActiveRecord: 0.2ms | Allocations: 3947)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:03:30 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 140)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1118)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 4010)
+Completed 200 OK in 37ms (Views: 27.3ms | ActiveRecord: 0.3ms | Allocations: 5309)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:13:07 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 140)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1116)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 4008)
+Completed 200 OK in 34ms (Views: 27.7ms | ActiveRecord: 0.4ms | Allocations: 5549)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:13:09 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 546)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2888)
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 3707)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:13:16 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 140)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1136)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 4038)
+Completed 200 OK in 29ms (Views: 21.5ms | ActiveRecord: 0.2ms | Allocations: 5337)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:13:35 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (5.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 140)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1121)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4027)
+Completed 200 OK in 33ms (Views: 22.2ms | ActiveRecord: 5.2ms | Allocations: 5400)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:15:34 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 1.4ms | Allocations: 140)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1127)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4032)
+Completed 200 OK in 33ms (Views: 26.2ms | ActiveRecord: 0.3ms | Allocations: 5405)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:16:01 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 564)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2904)
+Completed 200 OK in 17ms (Views: 10.7ms | ActiveRecord: 0.4ms | Allocations: 3725)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:16:03 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1133)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3481)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 3849)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:16:35 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 537)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2877)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 3624)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:16:36 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 881)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3229)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 3519)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 15:17:43 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 1.9ms | Allocations: 1125)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1386)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3734)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 4081)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:17:44 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 857)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3205)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 3494)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:18:01 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 552)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2892)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 3639)
+
+
+Started GET "/twonts/1/edit" for 127.0.0.1 at 2022-12-27 15:18:03 -0500
+Processing by TwontsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/edit.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 1.9ms | Allocations: 825)
+  Rendered twonts/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1084)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3424)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 4225)
+
+
+Started PATCH "/twonts/1" for 127.0.0.1 at 2022-12-27 15:18:06 -0500
+Processing by TwontsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "twont"=>{"twont"=>"This is a test twont!"}, "commit"=>"Update Twont", "id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+Redirected to http://localhost:3000/twonts/1
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:18:06 -0500
+Processing by TwontsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 624)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 2964)
+Completed 200 OK in 22ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 3753)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:18:08 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 860)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3208)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 3497)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 15:20:51 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 1.0ms | Allocations: 758)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 845)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3193)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 3483)
+
+
+Started POST "/twonts" for 127.0.0.1 at 2022-12-27 15:20:55 -0500
+Processing by TwontsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "twont"=>{"twont"=>"more"}, "commit"=>"Create Twont"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTwont Create (5.5ms)[0m  [1m[32mINSERT INTO "twonts" ("twont", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["twont", "more"], ["created_at", "2022-12-27 20:20:55.830654"], ["updated_at", "2022-12-27 20:20:55.830654"]]
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/twonts/3
+Completed 302 Found in 20ms (ActiveRecord: 10.5ms | Allocations: 2239)
+
+
+Started GET "/twonts/3" for 127.0.0.1 at 2022-12-27 15:20:55 -0500
+Processing by TwontsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 580)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2920)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 3668)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:21:01 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/_twont.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1028)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3383)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 3672)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 15:21:05 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 6.4ms | Allocations: 755)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 842)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3203)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 3493)
+
+
+Started POST "/twonts" for 127.0.0.1 at 2022-12-27 15:21:10 -0500
+Processing by TwontsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "twont"=>{"twont"=>"More"}, "commit"=>"Create Twont"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTwont Create (1.1ms)[0m  [1m[32mINSERT INTO "twonts" ("twont", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["twont", "More"], ["created_at", "2022-12-27 20:21:10.964220"], ["updated_at", "2022-12-27 20:21:10.964220"]]
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/twonts/4
+Completed 302 Found in 14ms (ActiveRecord: 4.9ms | Allocations: 2205)
+
+
+Started GET "/twonts/4" for 127.0.0.1 at 2022-12-27 15:21:11 -0500
+Processing by TwontsController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 586)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 2941)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 3689)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:21:12 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered twonts/_twont.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1160)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3511)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 3800)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 15:21:13 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 1.4ms | Allocations: 764)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 851)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3199)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3489)
+
+
+Started POST "/twonts" for 127.0.0.1 at 2022-12-27 15:21:18 -0500
+Processing by TwontsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "twont"=>{"twont"=>"MORE!"}, "commit"=>"Create Twont"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTwont Create (0.8ms)[0m  [1m[32mINSERT INTO "twonts" ("twont", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["twont", "MORE!"], ["created_at", "2022-12-27 20:21:18.710957"], ["updated_at", "2022-12-27 20:21:18.710957"]]
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/twonts/5
+Completed 302 Found in 10ms (ActiveRecord: 3.3ms | Allocations: 2231)
+
+
+Started GET "/twonts/5" for 127.0.0.1 at 2022-12-27 15:21:18 -0500
+Processing by TwontsController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 586)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2926)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 3674)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:21:19 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered twonts/_twont.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1272)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 3620)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 3909)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:23:00 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.5ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.8ms | Allocations: 140)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered twonts/_twont.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1898)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 4815)
+Completed 200 OK in 33ms (Views: 27.8ms | ActiveRecord: 0.5ms | Allocations: 5646)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:23:42 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.6ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 266)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2052)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4969)
+Completed 200 OK in 32ms (Views: 25.8ms | ActiveRecord: 0.6ms | Allocations: 5824)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:23:48 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 264)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1885)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4802)
+Completed 200 OK in 32ms (Views: 24.8ms | ActiveRecord: 0.2ms | Allocations: 5657)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:25:11 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.5ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 6.3ms | Allocations: 266)
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 1887)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 4804)
+Completed 200 OK in 47ms (Views: 42.2ms | ActiveRecord: 0.5ms | Allocations: 5659)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:25:37 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 266)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1899)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 4816)
+Completed 200 OK in 36ms (Views: 31.7ms | ActiveRecord: 0.3ms | Allocations: 5671)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:26:09 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (1.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 266)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1896)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 4813)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 1.1ms | Allocations: 5668)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:26:27 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:7
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1915)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 4850)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 0.3ms | Allocations: 5705)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:26:37 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:6
+  Rendered twonts/_twont.html.erb (Duration: 1.6ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1888)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4808)
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 0.2ms | Allocations: 5663)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:27:09 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 3.7ms | Allocations: 2239)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2801)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2884)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 3722)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;   if twont.errors.any? 
+                    ^^^^^^^):
+    1: <%= form_with(model: twont) do |form| %>
+    2:   <% if twont.errors.any? %>
+    3:     <div style="color: red">
+    4:       <h2><%= pluralize(twont.errors.count, "error") %> prohibited this twont from being saved:</h2>
+    5: 
+  
+app/views/twonts/_form.html.erb:2
+app/views/twonts/_form.html.erb:1
+app/views/twonts/index.html.erb:3
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:27:21 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:7
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1904)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4834)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 0.3ms | Allocations: 5683)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:27:41 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 4.2ms | Allocations: 2212)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2779)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2862)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 3698)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;   if twont.errors.any? 
+                    ^^^^^^^):
+    1: <%= form_with(model: twont) do |form| %>
+    2:   <% if twont.errors.any? %>
+    3:     <div style="color: red">
+    4:       <h2><%= pluralize(twont.errors.count, "error") %> prohibited this twont from being saved:</h2>
+    5: 
+  
+app/views/twonts/_form.html.erb:2
+app/views/twonts/_form.html.erb:1
+app/views/twonts/index.html.erb:4
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:28:22 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.5ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:7
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1892)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 4822)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.5ms | Allocations: 5671)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 15:28:24 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 1.8ms | Allocations: 1132)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1394)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3742)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 4112)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:29:01 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  Rendered twonts/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 5159)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 5245)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 6060)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x00000000031c18>
+
+'.freeze;@output_buffer.append=( form.label :twont, style: "display: block" );@output_buffer.safe_append='
+                                 ^^^^
+Did you mean?  for
+               fork):
+    2: 
+    3: <h1>Twonts</h1>
+    4: <div>
+    5: <%= form.label :twont, style: "display: block" %>
+    6: <%= form.text_area :twont %>
+    7: </div>
+    8: 
+  
+app/views/twonts/index.html.erb:5
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:29:10 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:8
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1900)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4830)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.2ms | Allocations: 5679)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:32:43 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:8
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1907)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 4824)
+Completed 200 OK in 37ms (Views: 30.9ms | ActiveRecord: 0.4ms | Allocations: 5679)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:33:59 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 6.0ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1895)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 4812)
+Completed 200 OK in 42ms (Views: 36.2ms | ActiveRecord: 0.4ms | Allocations: 5667)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:34:14 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1927)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 4844)
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 0.2ms | Allocations: 5699)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 15:34:16 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 2.9ms | Allocations: 1129)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1394)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 3755)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 4125)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:34:23 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1919)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 4836)
+Completed 200 OK in 33ms (Views: 27.8ms | ActiveRecord: 0.3ms | Allocations: 5670)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:39:34 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 50)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1878)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 4795)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.3ms | Allocations: 5650)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:39:43 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 4.5ms | Allocations: 188)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1864)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 4781)
+Completed 200 OK in 30ms (Views: 26.1ms | ActiveRecord: 0.2ms | Allocations: 5636)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:40:01 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 784)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3124)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 3993)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:40:15 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 589)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2929)
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 3676)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:40:57 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 2343)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 2429)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms | Allocations: 3700)
+
+
+  
+ActionView::Template::Error (Missing partial twonts/_This is a test twont!, application/_This is a test twont! with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Users/Quirk/Documents/GitHub/Twonter/twonter/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.4/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.4/app/views"
+
+Did you mean?  twonts/twont
+               twonts/form
+               action_text/contents/content
+               action_text/attachables/missing_attachable
+               layouts/action_text/contents/content
+               action_text/attachment_galleries/attachment_gallery):
+    1: <p style="color: green"><%= notice %></p>
+    2: 
+    3: <%= render @twont.twont %>
+    4: 
+    5: <div>
+    6:   <%= link_to "Edit this twont", edit_twont_path(@twont) %> |
+  
+app/views/twonts/show.html.erb:3
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:41:00 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 243)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1132)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4036)
+Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 0.2ms | Allocations: 5401)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:41:14 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4925)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5011)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms | Allocations: 6356)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `twont' for #<ActionView::Base:0x00000000032b18>
+
+'.freeze;@output_buffer.append=( twont.twont );@output_buffer.safe_append='
+                                 ^^^^^
+Did you mean?  @twont):
+    1: <p style="color: green"><%= notice %></p>
+    2: 
+    3: <%= twont.twont %>
+    4: 
+    5: <div>
+    6:   <%= link_to "Edit this twont", edit_twont_path(@twont) %> |
+  
+app/views/twonts/show.html.erb:3
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:41:18 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 243)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1144)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 4048)
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 0.3ms | Allocations: 5413)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:41:46 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1175)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4066)
+Completed 200 OK in 23ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 5439)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:42:51 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 1.1ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1187)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 4066)
+Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 0.2ms | Allocations: 5439)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:46:24 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 1.4ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1163)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4045)
+Completed 200 OK in 26ms (Views: 18.7ms | ActiveRecord: 0.3ms | Allocations: 5418)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:46:32 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 1.1ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1163)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 4044)
+Completed 200 OK in 25ms (Views: 19.4ms | ActiveRecord: 0.2ms | Allocations: 5417)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:46:34 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 63)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 591)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2931)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.3ms | Allocations: 3752)
+
+
+Started GET "/" for ::1 at 2022-12-27 15:47:45 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (1.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1396)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 3760)
+Completed 200 OK in 39ms (Views: 30.1ms | ActiveRecord: 1.1ms | Allocations: 4126)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:49:01 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1159)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 4052)
+Completed 200 OK in 31ms (Views: 24.3ms | ActiveRecord: 0.2ms | Allocations: 5351)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:49:03 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 63)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 564)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2906)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 3727)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:50:39 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1166)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 4057)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 0.1ms | Allocations: 5356)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:50:44 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1178)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4059)
+Completed 200 OK in 26ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 5432)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:50:50 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1157)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4038)
+Completed 200 OK in 27ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 5411)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:50:53 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.8ms | Allocations: 265)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1184)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 4064)
+Completed 200 OK in 28ms (Views: 21.2ms | ActiveRecord: 0.2ms | Allocations: 5437)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:52:03 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1503)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3852)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.3ms | Allocations: 4241)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 15:54:34 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1921)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4896)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 0.3ms | Allocations: 5728)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:54:34 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1269)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 3655)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.2ms | Allocations: 3967)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:54:35 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1251)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 3643)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.3ms | Allocations: 3932)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:54:39 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 63)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 768)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3150)
+Completed 200 OK in 23ms (Views: 14.9ms | ActiveRecord: 0.2ms | Allocations: 3998)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:54:40 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.5ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1275)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3661)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.5ms | Allocations: 3950)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:54:50 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1901)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4883)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.2ms | Allocations: 5715)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:54:53 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1257)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3644)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.2ms | Allocations: 3956)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:55:17 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 1.6ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1912)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 4957)
+Completed 200 OK in 58ms (Views: 52.4ms | ActiveRecord: 0.3ms | Allocations: 5789)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:55:18 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1263)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3685)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 3997)
+
+
+Started GET "/twonts/1" for 127.0.0.1 at 2022-12-27 15:55:20 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 63)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 765)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3179)
+Completed 200 OK in 17ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 4027)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:55:21 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1266)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3688)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.2ms | Allocations: 3977)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:55:22 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (4.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1260)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3682)
+Completed 200 OK in 31ms (Views: 22.3ms | ActiveRecord: 4.4ms | Allocations: 3971)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:55:24 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1251)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3673)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.3ms | Allocations: 3962)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:55:24 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1257)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 3679)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.4ms | Allocations: 3968)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:55:31 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 10.8ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 32.8ms | Allocations: 1907)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 231)
+  Rendered layout layouts/application.html.erb (Duration: 95.0ms | Allocations: 4940)
+Completed 200 OK in 106ms (Views: 101.4ms | ActiveRecord: 0.4ms | Allocations: 5772)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:55:33 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1287)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 3719)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.4ms | Allocations: 4031)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 15:57:38 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:10
+  Rendered twonts/_twont.html.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1911)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 231)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 4947)
+Completed 200 OK in 38ms (Views: 32.0ms | ActiveRecord: 0.3ms | Allocations: 5779)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:07:31 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  Rendered twonts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1188)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1275)
+Completed 500 Internal Server Error in 13ms (Allocations: 2104)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p style="color: green"><%= notice %></p>
+
+<div class="form-group">
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <button type="button" class="btn btn-info">Submit</button>
+</div>
+<%= link_to "New twont", new_twont_path, class="btn btn-info" %>
+
+<div id="twonts">
+  <% @twonts.each do |twont| %>
+    <%= render twont %>
+  <% end %>
+</div>
+
+
+):
+1:    <p style="color: green"><%= notice %></p>
+2:    
+3:    <div class="form-group">
+4:      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+5:      <button type="button" class="btn btn-info">Submit</button>
+6:    </div>
+7:    <%= link_to "New twont", new_twont_path, class="btn btn-info" %>
+8:    
+9:    <div id="twonts">
+10:      <% @twonts.each do |twont| %>
+11:        <%= render twont %>
+12:      <% end %>
+13:    </div>
+  
+app/views/twonts/index.html.erb:7: syntax error, unexpected '='
+app/views/twonts/index.html.erb:7: syntax error, unexpected '='
+app/views/twonts/index.html.erb:7: syntax error, unexpected '='
+app/views/twonts/index.html.erb:7: syntax error, unexpected '='
+app/views/twonts/index.html.erb:7: syntax error, unexpected '='
+app/views/twonts/index.html.erb:7: syntax error, unexpected '='
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:07:41 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:10
+  Rendered twonts/_twont.html.erb (Duration: 1.7ms | Allocations: 210)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 2079)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 5123)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.7ms | Allocations: 5968)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:08:00 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:10
+  Rendered twonts/_twont.html.erb (Duration: 1.7ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1916)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 4948)
+Completed 200 OK in 40ms (Views: 34.3ms | ActiveRecord: 0.3ms | Allocations: 5803)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:08:21 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:10
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1921)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 4953)
+Completed 200 OK in 41ms (Views: 35.3ms | ActiveRecord: 0.3ms | Allocations: 5808)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:10:27 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1940)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 4972)
+Completed 200 OK in 42ms (Views: 34.6ms | ActiveRecord: 0.4ms | Allocations: 5827)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:10:49 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.1ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1917)
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 4953)
+Completed 200 OK in 45ms (Views: 38.2ms | ActiveRecord: 0.4ms | Allocations: 5808)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:10:57 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.1ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1932)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 4968)
+Completed 200 OK in 35ms (Views: 29.5ms | ActiveRecord: 0.3ms | Allocations: 5823)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:11:05 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 2.4ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1932)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 228)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 4962)
+Completed 200 OK in 34ms (Views: 27.5ms | ActiveRecord: 0.2ms | Allocations: 5817)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:11:45 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1932)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 231)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 4965)
+Completed 200 OK in 44ms (Views: 36.2ms | ActiveRecord: 0.4ms | Allocations: 5820)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:12:24 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1917)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 4953)
+Completed 200 OK in 36ms (Views: 29.4ms | ActiveRecord: 0.3ms | Allocations: 5808)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:12:30 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1920)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4956)
+Completed 200 OK in 34ms (Views: 28.3ms | ActiveRecord: 0.3ms | Allocations: 5811)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:12:41 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.6ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 2.1ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 48.6ms | Allocations: 1920)
+  Rendered home/_header.html.erb (Duration: 4.2ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 4954)
+Completed 200 OK in 85ms (Views: 79.1ms | ActiveRecord: 0.6ms | Allocations: 5809)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:12:51 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.9ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1920)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 231)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 4953)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 0.9ms | Allocations: 5808)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:13:06 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.1ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1911)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 231)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 4944)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 0.4ms | Allocations: 5799)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:13:12 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.6ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 2.4ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 1920)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 231)
+  Rendered layout layouts/application.html.erb (Duration: 46.5ms | Allocations: 4953)
+Completed 200 OK in 71ms (Views: 60.1ms | ActiveRecord: 0.6ms | Allocations: 5808)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:13:17 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 5.1ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 1911)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 231)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 4944)
+Completed 200 OK in 48ms (Views: 39.4ms | ActiveRecord: 0.4ms | Allocations: 5799)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:13:23 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.7ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1929)
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 4961)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.2ms | Allocations: 5816)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:16:16 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:11
+  Rendered twonts/_twont.html.erb (Duration: 1.3ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1931)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 4963)
+Completed 200 OK in 42ms (Views: 34.6ms | ActiveRecord: 0.2ms | Allocations: 5818)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:16:40 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1930)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 4962)
+Completed 200 OK in 34ms (Views: 28.7ms | ActiveRecord: 0.2ms | Allocations: 5817)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:16:46 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1914)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 4946)
+Completed 200 OK in 40ms (Views: 32.8ms | ActiveRecord: 0.3ms | Allocations: 5801)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:18:36 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.6ms | Allocations: 226)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 63)
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 63)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 63)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1971)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 5015)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.2ms | Allocations: 5870)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:18:49 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (1.1ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.0ms | Allocations: 212)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1930)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 4962)
+Completed 200 OK in 40ms (Views: 33.2ms | ActiveRecord: 1.1ms | Allocations: 5817)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:19:25 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.1ms | Allocations: 212)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1915)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 4947)
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 0.2ms | Allocations: 5802)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:19:48 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.1ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1918)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 4950)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.3ms | Allocations: 5805)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:20:01 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.9ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1915)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 4947)
+Completed 200 OK in 41ms (Views: 33.5ms | ActiveRecord: 0.4ms | Allocations: 5802)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:20:17 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (1.0ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1929)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 4961)
+Completed 200 OK in 40ms (Views: 32.1ms | ActiveRecord: 1.0ms | Allocations: 5816)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 16:20:30 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 5.2ms | Allocations: 1147)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1410)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 3832)
+Completed 200 OK in 26ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 4202)
+
+
+Started POST "/twonts" for 127.0.0.1 at 2022-12-27 16:21:01 -0500
+Processing by TwontsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "twont"=>{"twont"=>"yesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"}, "commit"=>"Create Twont"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTwont Create (1.9ms)[0m  [1m[32mINSERT INTO "twonts" ("twont", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["twont", "yesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"], ["created_at", "2022-12-27 21:21:01.188286"], ["updated_at", "2022-12-27 21:21:01.188286"]]
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/twonts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/twonts/6
+Completed 302 Found in 21ms (ActiveRecord: 5.9ms | Allocations: 2319)
+
+
+Started GET "/twonts/6" for 127.0.0.1 at 2022-12-27 16:21:01 -0500
+Processing by TwontsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 843)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3269)
+Completed 200 OK in 21ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 4164)
+
+
+Started GET "/twonts" for 127.0.0.1 at 2022-12-27 16:21:12 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1384)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3806)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 4097)
+
+
+Started GET "/twonts/6" for 127.0.0.1 at 2022-12-27 16:21:27 -0500
+Processing by TwontsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/show.html.erb within layouts/application
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered twonts/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 599)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3013)
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 3760)
+
+
+Started GET "/twonts/6/edit" for 127.0.0.1 at 2022-12-27 16:22:04 -0500
+Processing by TwontsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts" WHERE "twonts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/twonts_controller.rb:63:in `set_twont'
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/edit.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 1.5ms | Allocations: 815)
+  Rendered twonts/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1073)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3487)
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 4287)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:22:11 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1399)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3821)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 4110)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 16:22:12 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 2.8ms | Allocations: 761)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 848)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3270)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 3560)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:23:32 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.3ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1402)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 3824)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 0.3ms | Allocations: 4113)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:24:11 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.5ms | Allocations: 54)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1396)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3818)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 4107)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:24:12 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 53)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1414)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3836)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 4125)
+
+
+Started GET "/twonts/new" for 127.0.0.1 at 2022-12-27 16:24:16 -0500
+Processing by TwontsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/new.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 2.1ms | Allocations: 746)
+  Rendered twonts/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 833)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 3255)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 3545)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:25:18 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 16.4ms | Allocations: 4975)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 5560)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 5643)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 6458)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `twont' for #<ActionView::Base:0x000000000362e0>
+
+            @virtual_path = "twonts/_form";;@output_buffer.append=  form_with(model: twont) do |form| @output_buffer.safe_append='
+                                                                                     ^^^^^
+Did you mean?  @twonts):
+    1: <%= form_with(model: twont) do |form| %>
+    2:   <% if twont.errors.any? %>
+    3:     <div style="color: red">
+    4:       <h2><%= pluralize(twont.errors.count, "error") %> prohibited this twont from being saved:</h2>
+  
+app/views/twonts/_form.html.erb:1
+app/views/twonts/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:25:19 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 10.0ms | Allocations: 4674)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 4910)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4987)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 5273)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `twont' for #<ActionView::Base:0x00000000036600>
+
+            @virtual_path = "twonts/_form";;@output_buffer.append=  form_with(model: twont) do |form| @output_buffer.safe_append='
+                                                                                     ^^^^^
+Did you mean?  @twonts):
+    1: <%= form_with(model: twont) do |form| %>
+    2:   <% if twont.errors.any? %>
+    3:     <div style="color: red">
+    4:       <h2><%= pluralize(twont.errors.count, "error") %> prohibited this twont from being saved:</h2>
+  
+app/views/twonts/_form.html.erb:1
+app/views/twonts/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:25:37 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  Rendered twonts/_form.html.erb (Duration: 8.2ms | Allocations: 2212)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 2798)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 2881)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 3688)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;   if twont.errors.any? 
+                    ^^^^^^^):
+    1: <%= form_with(model: twont) do |form| %>
+    2:   <% if twont.errors.any? %>
+    3:     <div style="color: red">
+    4:       <h2><%= pluralize(twont.errors.count, "error") %> prohibited this twont from being saved:</h2>
+    5: 
+  
+app/views/twonts/_form.html.erb:2
+app/views/twonts/_form.html.erb:1
+app/views/twonts/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:25:47 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (1.2ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 1.2ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2054)
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 233)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 5102)
+Completed 200 OK in 37ms (Views: 30.2ms | ActiveRecord: 1.2ms | Allocations: 5951)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-27 16:26:35 -0500
+Processing by TwontsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering twonts/index.html.erb within layouts/application
+  [1m[36mTwont Load (0.4ms)[0m  [1m[34mSELECT "twonts".* FROM "twonts"[0m
+  ↳ app/views/twonts/index.html.erb:9
+  Rendered twonts/_twont.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered twonts/_twont.html.erb (Duration: 0.4ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.3ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered twonts/_twont.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered twonts/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2070)
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 5102)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 0.4ms | Allocations: 5957)
+
+

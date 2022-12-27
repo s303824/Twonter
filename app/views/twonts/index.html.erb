@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="form-group">
+  <textarea class="form-control" rows="3"></textarea>
+    <%= link_to "New Twont", new_twont_path, class:"btn btn-info" %>
+</div>
+
+<div id="twonts">
+  <% @twonts.each do |twont| %>
+    <%= render twont %>
+  <% end %>
+</div>
+

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @twont %>
+
+<div>
+  <%= link_to "Edit this twont", edit_twont_path(@twont) %> |
+  <%= link_to "Back to twonts", twonts_path %>
+
+  <%= button_to "Destroy this twont" , @twont, method: :delete %>
+</div>

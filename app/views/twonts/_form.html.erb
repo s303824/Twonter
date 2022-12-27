@@ -1,0 +1,22 @@
+<%= form_with(model: twont) do |form| %>
+  <% if twont.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(twont.errors.count, "error") %> prohibited this twont from being saved:</h2>
+
+      <ul>
+        <% twont.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :twont, style: "display: block" %>
+    <%= form.text_area :twont %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

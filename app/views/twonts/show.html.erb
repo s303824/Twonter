@@ -3,8 +3,6 @@
 <%= render @twont %>
 
 <div>
-  <%= link_to "Edit this twont", edit_twont_path(@twont) %> |
-  <%= link_to "Back to twonts", twonts_path %>
-
-  <%= button_to "Destroy this twont" , @twont, method: :delete %>
+  <%= link_to "Edit", edit_twont_path(@twont) %>
+  <%= button_to "Delete" , @twont, method: :delete %>
 </div>

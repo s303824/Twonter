@@ -10,11 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_27_191602) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_28_045742) do
   create_table "twonts", force: :cascade do |t|
     t.text "twont"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "likes"
+    t.integer "boosts"
   end
 
 end
